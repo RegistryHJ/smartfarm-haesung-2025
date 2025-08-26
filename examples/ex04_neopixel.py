@@ -4,17 +4,5 @@ from neopixel import NeoPixel
 
 np = NeoPixel(machine.Pin(21), 1)
 
-# NeoPixel On 함수
-def neopixel_on():
-  for i in range(0, np.n):
-    np[i] = (25, 25, 25)
-  np.write()
-
-# NeoPixel Off 함수
-def neopixel_off():
-  for i in range(0, np.n):
-    np[i] = (0, 0, 0)
-  np.write()
-
-neopixel_on()     # NeoPixel를 켭니다.
-# neopixel_off()    # NeoPixel를 끕니다.
+np[0] = (25, 25, 25)  # NeoPixel의 색상과 밝기 설정
+np.write()  # NeoPixel에 색상 적용
