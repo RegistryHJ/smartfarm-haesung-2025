@@ -2,7 +2,7 @@ from machine import Pin, I2C
 from utime import sleep
 from ens160 import ENS160
 
-gas = ENS160(I2C(1, sda=Pin(14), scl=Pin(15), freq=400000))
+gas = ENS160(I2C(1, sda=Pin(2), scl=Pin(3), freq=400000))
 
 gas.reset()                   # 가스센서 리셋
 sleep(0.5)
