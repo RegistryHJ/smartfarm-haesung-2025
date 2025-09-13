@@ -1,11 +1,12 @@
+import network
 from utime import sleep
-from network import WLAN, STA_IF
+
 
 class WLAN:
   # Constructor
   def __init__(self, ssid, password):
     self.ssid, self.password = ssid, password
-    self.wlan_0 = WLAN(STA_IF)
+    self.wlan_0 = network.WLAN(network.STA_IF)
     self.wlan_0.active(True)
     self.wlan_0.connect(self.ssid, self.password)
 
