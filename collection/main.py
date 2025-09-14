@@ -18,7 +18,7 @@ ssid, password = "*", "*"  # WiFi SSID와 Password를 입력하세요!
 
 # 전역 변수
 active = False
-interval = 0.5
+interval = 600
 
 # HW 인스턴스 생성
 btn = Pin(20, Pin.IN, Pin.PULL_UP)
