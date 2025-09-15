@@ -1,7 +1,6 @@
 import network
 from utime import sleep
 
-
 class WLAN:
   # Constructor
   def __init__(self, ssid, password):
