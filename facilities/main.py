@@ -10,7 +10,7 @@ np2_color = (255, 255, 255)  # NeoPixel 2번 스트립 색상을 지정하세요
 
 # 전역 변수
 active = False
-np_off = (0, 0, 0)            # NeoPixel Off
+np_off = (0, 0, 0)
 
 # HW 인스턴스 생성
 btn = Pin(20, Pin.IN, Pin.PULL_UP)
