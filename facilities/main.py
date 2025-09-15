@@ -28,10 +28,10 @@ boot = Boot(np0, bz)
 def status_np0():
   """NeoPixel로 시스템 상태를 알리는 함수"""
   if active:
-    np0[i] = np0_color
+    np0[0] = np0_color
     np0.write()
   else:
-    np0[i] = np_off
+    np0[0] = np_off
     np0.write()
 
 # status_bz 함수
