@@ -36,6 +36,7 @@ def status_np0():
 
 # status_bz 함수
 def status_bz():
+  """Buzzer로 시스템 상태를 알리는 함수"""
   freqs = [1000, 2000]
 
   if active:
